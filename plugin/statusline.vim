@@ -1,3 +1,7 @@
+if v:version < 800
+  finish
+endif
+
 " remap : to set the status line, because the CmdLineEnter is whack.
 nnoremap : :call statusline#SetStatusLine("command")<cr>:
 
